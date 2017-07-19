@@ -31,6 +31,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 200px;
 }
 
 .progress-bar-text {
@@ -38,6 +39,7 @@ img {
   width: 300px;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .progress-bar-full {
@@ -59,5 +61,122 @@ img {
   top: 0;
   left: 40px;
   margin-top: -30px;
-  margin-right: 25px; 
+  margin-right: 25px;
+}
+
+.calendar-wrapper {
+  display: inline-block;
+  float: left;
+  width: 48%;
+  height: 100%;
+  margin-right: 5%;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0;
+  grid-auto-rows: minmax(70px, 70px);
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 400;
+  color: #414141;
+}
+
+.month-bar {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.calendar-header {
+  border: none;
+}
+
+.recent-workouts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  width: 48%;
+  flex-grow: 1
+}
+
+.recent-workouts-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+}
+
+.middle {
+  align-self: center;
+}
+
+.table-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1
+}
+
+.alt-color {
+  background-color: #E9EAEC;
+
+}
+
+.main-color {
+  background-color: #FFF
+}
+
+.off-month {
+  background-color: #E2E2E2;
+  color: #8F8F8F;
+}
+
+.green {
+  background-color: #24BE9B;
+}
+.red {
+  background-color: #FB4A52;
+}
+.yellow {
+  background-color: #FFF44F;
+}
+
+.black {
+  background-color: #2A2F48;
+  color: #FFF
+}
+
+.bold {
+  font-weight: 600;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  clear: both;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  background-color: #383E5A;
+  color: white;
+  font-size: 25px;
 }
