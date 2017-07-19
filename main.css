@@ -85,6 +85,7 @@ img {
   right: 15px;
   top: 25px;
   background-size: 100px;
+  background-position: right;
 }
 
 .calendar {
